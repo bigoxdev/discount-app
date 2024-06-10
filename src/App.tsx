@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import RadioSelection from './components/RadioSelection';
+import TextBox from './components/TextBox';
+import DiscountCodeGenerator from './components/DiscountCodeGenerator';
+import NotesField from './components/NotesField';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold mb-4">Discount App</h1>
+      <RadioSelection />
+      <TextBox />
+      <DiscountCodeGenerator />
+      <NotesField />
     </div>
   );
-}
+};
 
 export default App;
